@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'mfe-2';
+  
+  suaVariavel: any
+  ngOnInit(): void {
+    this.obterDoLocalStorage()
+    
+  }
+  
+  obterDoLocalStorage(): void {
+    
+     this.suaVariavel = localStorage.getItem('sessaoApp');
+    console.log('Valor recuperado do localStorage:',this.suaVariavel);
+  }
 }
