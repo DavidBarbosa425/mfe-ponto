@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SessaoAppService } from './core/sessao-app/sessao-app.service';
+import { SessaoApp } from './core/sessao-app/sessao.model';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  suaVariavel: any
+  sessaoApp : SessaoApp = new SessaoApp()
+  SessaoAppService: SessaoAppService = new SessaoAppService()
+
   ngOnInit(): void {
-    this.obterDoLocalStorage()
+    this.sessaoApp = SessaoAppService.getSessao()
     
   }
   
-  obterDoLocalStorage(): void {
-    
-     this.suaVariavel = localStorage.getItem('sessaoApp');
-    console.log('Valor recuperado do localStorage:',this.suaVariavel);
-  }
 }
