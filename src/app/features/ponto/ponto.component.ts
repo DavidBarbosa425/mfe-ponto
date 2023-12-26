@@ -1,5 +1,4 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from "@angular/core"
-import { MatTabChangeEvent } from "@angular/material/tabs"
 import { BaseComponent } from "../../shared/base/components/base-page/base.component"
 import { BaseModel } from "../../shared/base/models/baseModel"
 import { AmbienteSelecionadoEnumm, FuncionariosFilter, FuncionariosGrid, SessaoAppToIframe, UsuarioLogado } from "../entity/painel-colaborador.model"
@@ -35,8 +34,6 @@ export class MensagemParam {
   templateUrl: './ponto.component.html',
   styleUrls: ['./ponto.component.css']
 })
-
-
 
 export class PontoComponent extends BaseComponent implements OnInit {
 
@@ -86,21 +83,6 @@ export class PontoComponent extends BaseComponent implements OnInit {
         // iframe.contentWindow.postMessage(sessaoAppToIframe, 'http://localhost:4203/extrato');
 
         }, 1000);
-
-  }
-
-  setTelaAprovacaoPonto(): void{
-
-  }
-
-  expandir():void{
-
-    this.mensagemExpandirFilho.expandir = !this.mensagemExpandirFilho.expandir
-    this.mensagemExpandirFilho.tabFilho = this.selectedTabIndex
-    this.mensagemExpandirFilho.tabPai = 1
-
-    this.mensagemExpandirEnviadaPai.emit(this.mensagemExpandirFilho)
-   console.log('filho',this.mensagemExpandirFilho)
 
   }
 
