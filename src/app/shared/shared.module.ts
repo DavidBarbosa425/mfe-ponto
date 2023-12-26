@@ -20,11 +20,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     FlexLayoutModule,
     MaterialModule,
-    RouterModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    ProgressDefaultComponent,
+    // RouterModule,
+    // BrowserModule,
+    // BrowserAnimationsModule,
+    // HttpClientModule,
+    // ProgressDefaultComponent,
     CustomFontAwesomeModule,
     FontAwesomeModule
 
@@ -33,10 +33,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     FlexLayoutModule,
     MaterialModule,
-    RouterModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
+    // RouterModule,
+    // BrowserModule,
+    // BrowserAnimationsModule,
+    // HttpClientModule,
     CustomFontAwesomeModule,
     FontAwesomeModule
   ]
