@@ -9,11 +9,13 @@ import { CustomFontAwesomeModule } from "./libraries/font-awesome/fa.module";
 import { MaterialModule } from "./libraries/material/material.module";
 import { ProgressDefaultComponent } from "./template/form/progress-defaul/progress-default.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardFuncComponent } from "./template/card-func/card-func.component";
 
 
 @NgModule({
   declarations: [
-    ProgressDefaultComponent
+    ProgressDefaultComponent,
+    CardFuncComponent
 
   ],
   exports : [
